@@ -1,0 +1,121 @@
+/* General Styles */
+h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #f3ec78, #af4261);
+    margin: 0;
+    color: #ffffff;
+}
+
+/* Container for Centering Content */
+.container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Clock Shape */
+.clock {
+    width: 250px;
+    height: 250px;
+    border: 10px solid #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px auto;
+    background: radial-gradient(circle, #333333, #111111);
+    position: relative;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Stopwatch Display */
+#stopwatch {
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    color: #ffffff;
+    animation: pulse 1s infinite;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Button Styles */
+.btn {
+    background-color: #ffffff;
+    color: #af4261;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background-color: #f3ec78;
+    color: #333333;
+}
+
+/* Laps Section */
+#laps {
+    margin-top: 20px;
+    text-align: left;
+}
+
+#lap-history {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#lap-list {
+    list-style: none;
+    padding: 0;
+}
+
+#lap-list li {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid #ffffff;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    word-wrap: break-word;
+}
+
+/* Keyframe Animations */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

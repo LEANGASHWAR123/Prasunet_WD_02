@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Stopwatch</title>
+    <link rel="stylesheet" href="clock.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Stopwatch</h1>
+        <div class="clock">
+            <div id="stopwatch">00:00:00</div>
+        </div>
+        <div class="buttons">
+            <button id="start" class="btn" aria-label="Start stopwatch">Start</button>
+            <button id="pause" class="btn" aria-label="Pause stopwatch" disabled>Pause</button>
+            <button id="lap" class="btn" aria-label="Record lap">Lap</button>
+            <button id="reset" class="btn" aria-label="Reset stopwatch">Reset</button>
+        </div>
+        <div id="laps">
+            <h2>Laps</h2>
+            <div id="lap-history">
+                <ul id="lap-list"></ul>
+            </div>
+        </div>
+    </div>
+    <audio id="lap-sound" src="lap.wav" preload="auto"></audio>
+    <audio id="start-sound" src="start.wav" preload="auto"></audio>
+    <audio id="pause-sound" src="stop.wav" preload="auto"></audio>
+    <audio id="reset-sound" src="pause.wav" preload="auto"></audio>
+    <script src="clock.js"></script>
+</body>
+</html>
